@@ -129,19 +129,8 @@ node src/index.js
 5. **不要用插桩做接受性实验**：`CSVM_VMWATCH` / `CSVM_CALL_LOG` / `CSVM_FB_TRACE`
    会在执行前改写挑战源码，挑战会哈希自身函数源码，P 会被毒化（表现为恒 400）。
 
----
-
-## 6. 历史里程碑（简）
-
-| 时间 | 结论 |
-|---|---|
-| 11-13 | 原生 HTMLDDA、集合/事件/选择器等基础 DOM 对齐 |
-| 11-14 | 发现「jsdom DOM + 我们的 host」可 200；确认差距在 DOM 行为层 |
-| 11-15 上 | 载荷明文 TLV 结构解析；排除环境值/随机流/加密入参 |
-| 11-15 下 | 实时载荷二分：判据锁定 type-3 + type-7；真机 Chrome 载荷基准 |
-| **11-15 晚** | 修复 Window 命名属性 + form 覆盖语义 → **纯代码路径真机 200** |
-| 11-16 | 打包为纯代码框架（移除 jsdom/sdenv、目标脚本与诊断工具） |
-
+## 6.详情解解析
+详情解析移步https://blog.zhuhy.cloud/archives/rui-shu-6dai-bu-huan-jing-fen-xi
 ---
 
 ## 7. 使用声明
